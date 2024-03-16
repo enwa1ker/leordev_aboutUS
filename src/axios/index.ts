@@ -20,5 +20,8 @@ export const liorAPI = {
     },
     getTeam(){
         return instance.get(`team_leordev/`)
+    },
+    getFaq(){
+        return instance.get(`faq_leordev/`)
     }
 }

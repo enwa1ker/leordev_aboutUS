@@ -86,7 +86,7 @@ const Home: FC = () => {
             </section>
 
             <section>
-                    <div className={`${s.project_wp} container`}>
+                <div className={`${s.project_wp} container`}>
                     <div className={s.project_left} >
                         <h2>ВИЗУАЛИЗАЦИЯ УСПЕХА</h2>
                         <h3>Наш проектный процесс</h3>
