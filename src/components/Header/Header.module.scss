@@ -1,9 +1,9 @@
 .icon {
     display: flex;
-    gap: 133px;
     justify-content: flex-end;
-    padding-bottom: 9px;
     padding-top: 19px;
+    padding-bottom: 9px;
+    gap: 20px;
 
     .icon_block {
         display: flex;
@@ -16,10 +16,10 @@
             font-size: 10px;
             font-weight: 400;
             line-height: 15px;
+            margin: 0;
         }
     }
 }
-
 
 .header {
     background: url('../../Assets/image/Ramilya/bg_nav.png') top/ cover no-repeat;
@@ -33,9 +33,7 @@
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: none;
 }
 
 .nav_title {
@@ -49,17 +47,34 @@
 }
 
 .btn_nav {
-    font-family: 'Poppins', sans-serif;
-    width: 151px;
-    height: 35px;
-    border-radius: 7px;
-    padding: 10.5px 26px;
-    box-shadow: 0 0 34px 0 #e6a14b4d;
-    background: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 125%;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .icon {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .nav_title {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .btn_nav {
+        display: block;
+    }
 }
